@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <title>Processo Seletivo OBUC</title>
+
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row text-white header p-3">
+            <div class="col-6 d-flex justify-content-start align-items-center mh-100">
+                <i>Controle de Locais de Trabalho</i>
+            </div>
+            <!-- <div class="col d-flex justify-content-end align-items-center mh-100">
+                <ul class="col">
+                    <li><a href="#">🏠</a></li>
+                    <li><a href="#">🧑</a></li>
+                </ul>
+            </div> -->
+            <ul class="col d-flex justify-content-end align-items-center mh-100">
+                <li>
+                    <a href="#" class="icon-person">
+                        <i class="bi bi-house-door-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-house d-inline-block">
+                        <div class="row d-flex">
+                            <div class="col d-flex user-icon"><i class="bi bi-person-circle"></i></div>
+                            <div class="col flex-column user-info">
+                                <div class="user-name">
+                                    <i>Usuário</i>
+                                </div>
+                                <div class="type-name">
+                                    <i>Administrador</i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="row fit-page">
+            <div class="col-2 text-white side-bar p-0">
+                <ul class="d-flex flex-column side-bar">
+                    <p class="d-flex select-item align-items-center">⚙ Administração</p>
+                    <li><a href="#">Administradores</a></li>
+                    <li><a href="#">Áreas</a></li>
+                    <li class="selected"><a href="#">Locais de Trabalho</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Log</a></li>
+                    <li><a href="#">Responsáveis</a></li>
+                </ul>
+            </div>
+            <div class="col p-5 pt-4">
+                <div class="row show-selected">
+                    <h3 style="font-size: 20px;">Locais de Trabalho</h3>
+                </div>
+                <div class="row workspace">
+                    <div class="col form-table-space">
+                        <form method="POST" action="#" class="row info-form">
+                            <div class="col-3 col-predio" style="margin-right: 10px;">
+                                <div class="row"><label for="select-predio">Prédio</label></div>
+                                <div class="row">
+                                    <select name="select-predio" id="select-predio" required>
+                                        <option hidden disabled selected value>
+                                        </option>
+                                        <option value="predio1">Prédio 1</option>
+                                        <option value="predio2">Prédio 2</option>
+                                        <option value="predio3">Prédio 3</option>
+                                        <option value="predio4">Prédio 4</option>
+                                        <option value="predio5">Prédio 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3 col-localtrab">
+                                <div class="row"><label for="select-localtrab">Local de Trabalho</label>
+                                </div>
+                                <div class="row">
+                                    <input type="text" name="select-localtrab" id="select-localtrab"
+                                        placeholder="Local de trabalho" required>
+                                </div>
+                            </div>
+                            <div class="col-1 col-icons">
+                                <div class="row"><br></div>
+                                <button class="btn-add-table"><i class="bi bi-plus add-icon"></i></button>
+                            </div>
+                        </form>
+                        <table id="tabela-locais">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Prédio</th>
+                                    <th scope="col">Local de trabalho</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Prédio 1</td>
+                                    <td>Local de trabalho</td>
+                                    <td><a href="#"><i class="bi bi-pencil-square"></i><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Prédio 1</td>
+                                    <td>Local de trabalho</td>
+                                    <td><a href="#"><i class="bi bi-pencil-square"></i><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Prédio 1</td>
+                                    <td>Local de trabalho</td>
+                                    <td><a href="#"><i class="bi bi-pencil-square"></i><i class="bi bi-trash"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
