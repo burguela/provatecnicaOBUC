@@ -1,0 +1,22 @@
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 576px) {
+  .texto-intro-header {
+    font-size: 15px;
+  }
+  .icon-person,
+  .icon-house {
+    font-size: 25px;
+  }
+  .user-name {
+    font-size: 15px;
+  }
+  .type-name {
+    font-size: 7px;
+  }
+
+  .user-info {
+    width: 50px;
+    margin-right: 10px;
+    padding-left: 0px;
+  }
+}
